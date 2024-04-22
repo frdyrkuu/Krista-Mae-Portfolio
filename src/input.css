@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+
+
+@font-face {
+    font-family: "Brown Sugar";
+    src: url("../resources/font/Brown-Sugar/Brown\ Sugar\ .ttf");
+}
