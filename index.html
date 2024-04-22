@@ -61,7 +61,7 @@
 <body class="antialiased bg-[#F6E0ED] overflow-x-hidden scroll-smooth" id="body"
     style="cursor: url('https://www.cursor.cc/cursor/812/178/cursor.png') 20 20, auto;">
 
-    <section class="flex mx-auto items-center h-screen justify-center animate-pulse" id="loader">
+    <section class="hidden mx-auto items-center h-screen justify-center animate-pulse" id="loader">
         <div>
             <img src="./images/Self Logo.svg" alt="" class="h-20 w-20 mx-auto flex">
             <h1 class="font-brownsugar tracking-wider md:text-4xl text-xl text-[#EB5A97] font-semibold">KRISTA
@@ -71,21 +71,20 @@
         </div>
     </section>
     <!-- Main Landing Page -->
-    <main class="hidden duration-200 transition ease-linear" id="main">
+    <main class="duration-200 transition ease-linear" id="main">
         <!-- Navigation Bar -->
 
-        <script>
-
+        <!-- <script>
             const main = document.getElementById("main");
             const loader = document.getElementById("loader");
-
-            window.addEventListener("load", () => {
+        
+            setTimeout(() => {
                 main.classList.remove("hidden");
                 loader.classList.remove("flex");
                 loader.classList.add("hidden");
-            });
-
-        </script>
+            }, 5000); // 5 seconds delay
+        </script> -->
+        
         <header
             class="h-32 px-4 p-4 w-full mx-auto sticky top-0 bg-transparent z-10 transition duration-500 ease-in flex justify-between items-center"
             id="header">
