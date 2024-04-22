@@ -656,6 +656,10 @@ video {
   display: none;
 }
 
+.h-14{
+  height: 3.5rem;
+}
+
 .h-32{
   height: 8rem;
 }
@@ -672,10 +676,6 @@ video {
   height: 300px;
 }
 
-.h-\[500px\]{
-  height: 500px;
-}
-
 .h-auto{
   height: auto;
 }
@@ -684,20 +684,12 @@ video {
   height: 100vh;
 }
 
-.h-20{
-  height: 5rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-14{
-  height: 3.5rem;
-}
-
 .w-1\/2{
   width: 50%;
+}
+
+.w-14{
+  width: 3.5rem;
 }
 
 .w-\[400px\]{
@@ -715,18 +707,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-20{
-  width: 5rem;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-14{
-  width: 3.5rem;
 }
 
 .max-w-7xl{
@@ -1067,10 +1047,6 @@ video {
 
 .font-\[\'Great_Vibes\'\]{
   font-family: 'Great Vibes';
-}
-
-.font-\[\'Lexend_Deca\'\]{
-  font-family: 'Lexend Deca';
 }
 
 .font-brownsugar{
