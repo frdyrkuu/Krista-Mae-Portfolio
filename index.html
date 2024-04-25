@@ -73,19 +73,9 @@
         </div>
     </section>
     <!-- Main Landing Page -->
-    <main class="duration-200 transition ease-linear" id="main">
+    <main class="" id="main">
         <!-- Navigation Bar -->
 
-        <!-- <script>
-            const main = document.getElementById("main");
-            const loader = document.getElementById("loader");
-        
-            setTimeout(() => {
-                main.classList.remove("hidden");
-                loader.classList.remove("flex");
-                loader.classList.add("hidden");
-            }, 5000); // 5 seconds delay
-        </script> -->
 
         <header
             class="h-32 px-4 p-4 w-full mx-auto sticky top-0 bg-transparent z-10 transition duration-500 ease-in flex justify-between items-center"
@@ -362,15 +352,12 @@
                     </div>
                 </article>
                 <div class="">
-                    <img src="./images/landing page.png" alt="Krista-Mae" class="lg:w-[800px] w-full">
+                    <img src="./images/landing page.png" alt="Krista-Mae" class="lg:w-[800px] w-full" loading="lazy">
                 </div>
             </section>
         </div>
 
-
-
         <!-- Why me? -->
-
         <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-auto"
             style="background-image: url(./images/About\ me.png);">
 
@@ -401,7 +388,6 @@
 
 
         </section>
-
 
         <!-- What can I do for you? -->
         <section class="items-center md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-auto mx-auto" id="services"
@@ -536,65 +522,13 @@
         </section>
 
         <!-- Sample works -->
-        <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-screen" id="works"
-            style="background-image: url(./images/About\ me.png);">
+        <!-- <section class="items-center md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-auto lg:h-screen"
+            id="works" style="background-image: url(./images/About\ me.png);">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#F6E0ED" fill-opacity="1"
                     d="M0,64L34.3,90.7C68.6,117,137,171,206,176C274.3,181,343,139,411,133.3C480,128,549,160,617,160C685.7,160,754,128,823,112C891.4,96,960,96,1029,128C1097.1,160,1166,224,1234,224C1302.9,224,1371,160,1406,128L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
                 </path>
             </svg>
-
-
-            <!-- Marquee Reference -->
-            <!-- <div class="relative flex overflow-x-hidden mb-20" id="works">
-                <div class="py-12 animate-marquee flex whitespace-nowrap font-bold">
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Photoshop_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_After_Effects_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Premier_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/canva.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/ig.png" class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/2023_Facebook_icon.svg.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/youtube.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                </div>
-
-                <div class="flex absolute top-0 py-12 animate-marquee2 whitespace-nowrap font-bold">
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Photoshop_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_After_Effects_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Premier_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/canva.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/ig.png" class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/2023_Facebook_icon.svg.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/youtube.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                </div>
-            </div> -->
-
-
 
             <div class="text-center lg:-mt-10 pb-20" data-aos="fade-up">
                 <h1 class="md:text-6xl text-4xl font-bold text-[#EB5A97]">MY SAMPLE WORKS</h1>
@@ -608,7 +542,7 @@
                 }
             </style>
 
-            <section class="splide mb-20" aria-label="Sample Works">
+            <section class="splide" aria-label="Sample Works" data-aos="zoom-in">
                 <div class="splide__track flex mx-auto items-center justify-center">
                     <ul class="splide__list">
                         <li class="splide__slide">
@@ -733,64 +667,15 @@
                     </ul>
                 </div>
             </section>
-
-            <!-- Marquee Reference -->
-            <!-- <div class="relative flex overflow-x-hidden mt-20" id="works">
-                <div class="py-12 animate-marquee3 flex whitespace-nowrap font-bold">
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Photoshop_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_After_Effects_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Premier_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/canva.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/ig.png" class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/2023_Facebook_icon.svg.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/youtube.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-
-                </div>
-
-                <div class="flex absolute top-0 py-12 animate-marquee4 whitespace-nowrap font-bold">
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Photoshop_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_After_Effects_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Premier_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/canva.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/ig.png" class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/2023_Facebook_icon.svg.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/youtube.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                </div>
-            </div> -->
+      
+        </section> -->
 
 
-        </section>
-
+        <!-- Sample Works 2 -->
         <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-auto pb-24"
-            style="background-image: url(./images/Home.png);">
+            id="works" style="background-image: url(./images/About\ me.png);">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#EDC7DD" fill-opacity="1"
+                <path fill="#F6E0ED" fill-opacity="1"
                     d="M0,64L34.3,90.7C68.6,117,137,171,206,176C274.3,181,343,139,411,133.3C480,128,549,160,617,160C685.7,160,754,128,823,112C891.4,96,960,96,1029,128C1097.1,160,1166,224,1234,224C1302.9,224,1371,160,1406,128L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
                 </path>
             </svg>
@@ -798,28 +683,51 @@
             <div class="text-center lg:-mt-10 pb-20" data-aos="fade-up">
                 <h1 class="md:text-6xl text-4xl font-bold text-[#EB5A97]">MY SAMPLE WORKS</h1>
                 <h2 class="text-2xl mt-2 text-[#EB5A97] font-semibold">
-                    Brochures and Infographics
+                    Reels, Stories, Posts, Brochures and Infographics
                 </h2>
             </div>
 
             <div class="flex mx-auto items-center justify-center">
                 <div class="container">
-                    <div id="macy" data-aos="zoomAndPan">
-                        <div class="box">
+                    <div id="macy">
+                        <div class="box" data-aos="zoomAndPan">
+                            <img src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%201.gif?raw=true"
+                                alt="sample-works">
+                        </div>
+                        <div class="box" data-aos="zoomAndPan">
+                            <img src="./images/i1 PODCAST EDITOR.png" alt="">
+                        </div>
+                        <div class="box" data-aos="zoomAndPan">
+                            <img src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%202.gif?raw=true"
+                                alt="sample-works">
+                        </div>
+                        <div class="box" data-aos="zoomAndPan">
+                            <img src="./images/i1 PODCAST EDITOR.png" alt="">
+                        </div>
+                        <div class="box" data-aos="zoomAndPan">
+                            <img src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%203.gif?raw=true"
+                                alt="sample-works">
+                        </div>
+                        <div class="box" data-aos="zoomAndPan">
                             <img src="./images/Story/1.png" alt="">
                         </div>
-                        <div class="box">
-                            <img src="./images/i1 PODCAST EDITOR.png" alt="">
-                        </div>
-                        <div class="box">
-                            <img src="./images/i1 PODCAST EDITOR.png" alt="">
-                        </div>
-                        <div class="box">
-                            <img src="./images/i1 PODCAST EDITOR.png" alt="">
-                        </div>
-                        <div class="box">
+                        <div class="box" data-aos="zoomAndPan">
                             <img src="./images/Story/1.png" alt="">
                         </div>
+                        <div class="box" data-aos="zoomAndPan">
+                            <img src="./images/Story/1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex mx-auto items-center justify-center mt-20">
+                        <a href="">
+                            <button class="buttons learn-more">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Show More</span>
+                            </button>
+                        </a>
                     </div>
 
                 </div>
@@ -837,26 +745,22 @@
         </section>
 
 
-
+        <!-- Certifications -->
         <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-screen pb-24"
-            style="background-image: url(./images/About\ me.png);">
+            style="background-image: url(./images/Home.png);">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#F6E0ED" fill-opacity="1"
+                <path fill="#EDC7DD" fill-opacity="1"
                     d="M0,64L34.3,90.7C68.6,117,137,171,206,176C274.3,181,343,139,411,133.3C480,128,549,160,617,160C685.7,160,754,128,823,112C891.4,96,960,96,1029,128C1097.1,160,1166,224,1234,224C1302.9,224,1371,160,1406,128L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
                 </path>
             </svg>
-
-
-
 
             <div class="text-center lg:-mt-10 pb-20" data-aos="fade-up">
                 <h1 class="md:text-6xl text-4xl font-bold text-[#EB5A97]">CERTIFICATIONS</h1>
 
             </div>
-
         </section>
-
     </main>
+
     <script src="./js/app.js"></script>
     <!-- <script src="./js/cursor.js"></script> -->
     <script src="./js/macy.js"></script>
