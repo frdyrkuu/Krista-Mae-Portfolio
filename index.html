@@ -47,6 +47,8 @@
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
 
+    <!-- MACY JS -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 </head>
 
 
@@ -316,56 +318,10 @@
             </div>
         </section>
 
-        <script>
-            function hamburger() {
-                var body = document.getElementById('body');
-                var button = document.getElementById('hamburger');
-                var content = document.getElementById('hamburger_content');
 
-                if (button.onclick) {
-                    if (content.classList.contains("invisible")) {
-                        // to open the hamburger content
-                        content.classList.remove("invisible")
-                        content.classList.add("flex")
-                        body.classList.add("overflow-y-hidden")
-                        body.classList.add("h-[100%]")
-                    } else {
-                        // to close the hamburger content
-                        content.classList.add("invisible")
-                        content.classList.remove("flex")
-                        body.classList.remove("overflow-y-hidden")
-                        body.classList.remove("h-[100%]")
-                    }
-                }
-            }
-        </script>
-
-
-
-        <script>
-            // Wrap the script in a DOMContentLoaded event listener
-            document.addEventListener("DOMContentLoaded", function () {
-                // Select the header element
-                const header = document.getElementById('header');
-                function handleScroll() {
-                    if (window.scrollY > 0) {
-                        header.classList.remove('bg-transparent');
-                        header.classList.add('bg-[#F6E0ED]');
-                        header.classList.add('bg-[shadow-lg]');
-
-                    } else {
-                        header.classList.remove('bg-[#F6E0ED]');
-                        header.classList.remove('shadow-lg');
-                        header.classList.add('bg-transparent');
-                    }
-                }
-
-                window.addEventListener('scroll', handleScroll);
-            });
-        </script>
         <div class="max-w-7xl mx-auto bg-no-repeat" style="background-image: url(./images/Home.png);">
             <section
-                class="flex flex-col-reverse justify-center lg:flex-row px-4 items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen mb-10">
+                class="flex flex-col justify-center lg:flex-row px-4 items-center md:bg-center md:bg-no-repeat bg-cover bg-blend-screen mb-10">
                 <article class="max-w-7xl mx-auto">
                     <h1
                         class="text-center lg:text-6xl text-2xl pt-10 font-[800] capitalize text-[#EB5A97] tracking-wider">
@@ -405,10 +361,8 @@
                         </a>
                     </div>
                 </article>
-                <div
-                    class="group mx-auto flex lg:w-[520px] lg:h-[580px] h-[300px] w-auto rotate-0 mt-20 lg:rotate-6 justify-center items-center mb-10">
-                    <img src="./images/krista-img.jpg" alt="Krista-Mae"
-                        class="lg:w-[560px] w-[400px] object-cover rounded-[4rem] border-8 border-[#EB5A97] shadow-2xl shadow-pink-500">
+                <div class="">
+                    <img src="./images/landing page.png" alt="Krista-Mae" class="lg:w-[800px] w-full">
                 </div>
             </section>
         </div>
@@ -582,7 +536,7 @@
         </section>
 
         <!-- Sample works -->
-        <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-auto" id="works"
+        <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-screen" id="works"
             style="background-image: url(./images/About\ me.png);">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#F6E0ED" fill-opacity="1"
@@ -654,154 +608,131 @@
                 }
             </style>
 
-            <section class="splide" aria-label="Sample Works">
+            <section class="splide mb-20" aria-label="Sample Works">
                 <div class="splide__track flex mx-auto items-center justify-center">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%201.gif?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%201.gif?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/1.png?raw=true alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/1.png?raw=true alt="
+                                5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%202.gif?raw=true" alt="5" border="0" data-aos="zoom-in">
-                        </li>
-
-                        <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%203.gif?raw=true" alt="5" border="0" data-aos="zoom-in">
-                        </li>
-                        <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/1.png?raw=true" alt="5" border="0" data-aos="zoom-in">
-                        </li>
-                        <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%204.gif?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%202.gif?raw=true"
+                                alt="5" border="0">
                         </li>
 
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%205.gif?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%203.gif?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/2.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/1.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/2.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%204.gif?raw=true"
+                                alt="5" border="0">
                         </li>
 
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/3.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Reels/Reel%205.gif?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/3.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/2.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/4.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/2.png?raw=true"
+                                alt="5" border="0">
+                        </li>
+
+                        <li class="splide__slide">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/3.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/4.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/3.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/5.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/4.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/5.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/4.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/6.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/5.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/6.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/5.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/7.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/6.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/7.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/6.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/8.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/7.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/8.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/7.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/9.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/8.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/9.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/8.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/10.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/9.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/10.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/9.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/11.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/10.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/11.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/10.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/12.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/11.png?raw=true"
+                                alt="5" border="0">
                         </li>
                         <li class="splide__slide">
-                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/12.png?raw=true" alt="5" border="0" data-aos="zoom-in">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/11.png?raw=true"
+                                alt="5" border="0">
+                        </li>
+                        <li class="splide__slide">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Post/12.png?raw=true"
+                                alt="5" border="0">
+                        </li>
+                        <li class="splide__slide">
+                            <img data-src="https://github.com/frdyrkuu/Krista-Mae-Portfolio/blob/main/images/Story/12.png?raw=true"
+                                alt="5" border="0">
                         </li>
                     </ul>
                 </div>
             </section>
-
-            <script>
-                var splide;
-
-                document.addEventListener("DOMContentLoaded", function () {
-                    var images = document.querySelectorAll("img[data-src]");
-                    var loadedImages = 0;
-
-                    images.forEach(function (img) {
-                        var src = img.getAttribute("data-src");
-                        var tempImg = new Image();
-                        tempImg.onload = function () {
-                            loadedImages++;
-                            if (loadedImages === images.length) {
-                                // All images are loaded, do something if needed
-                            }
-                            img.setAttribute("src", src); // Display the image once loaded
-                        };
-                        tempImg.src = src; // Start loading the image
-                    });
-                });
-
-
-                // Function to initialize Splide with appropriate perPage value
-                function initSplide() {
-                    var perPageValue = window.matchMedia("(max-width: 767px)").matches ? 2 : 4;
-
-                    if (splide) {
-                        splide.destroy();
-                    }
-
-                    splide = new Splide('.splide', {
-                        type: 'loop',
-                        perPage: perPageValue,
-                        autoplay: true,
-                    });
-
-                    splide.mount();
-                }
-
-                // Initialize Splide on page load
-                window.addEventListener('load', function () {
-                    initSplide();
-                });
-
-                // Reinitialize Splide when the window size changes
-                window.addEventListener('resize', function () {
-                    initSplide();
-                });
-            </script>
-
-
 
             <!-- Marquee Reference -->
             <!-- <div class="relative flex overflow-x-hidden mt-20" id="works">
@@ -856,7 +787,7 @@
 
         </section>
 
-        <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-screen pb-24"
+        <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-auto pb-24"
             style="background-image: url(./images/Home.png);">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#EDC7DD" fill-opacity="1"
@@ -864,14 +795,47 @@
                 </path>
             </svg>
 
-
-
-            <div class="text-center lg:-mt-10 mt-10" data-aos="fade-up">
-                <h1 class="text-4xl font-['Great_Vibes'] text-[#C66990]">My Sample Works</h1>
+            <div class="text-center lg:-mt-10 pb-20" data-aos="fade-up">
+                <h1 class="md:text-6xl text-4xl font-bold text-[#EB5A97]">MY SAMPLE WORKS</h1>
+                <h2 class="text-2xl mt-2 text-[#EB5A97] font-semibold">
+                    Brochures and Infographics
+                </h2>
             </div>
+
+            <div class="flex mx-auto items-center justify-center">
+                <div class="container">
+                    <div id="macy" data-aos="zoomAndPan">
+                        <div class="box">
+                            <img src="./images/Story/1.png" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/i1 PODCAST EDITOR.png" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/i1 PODCAST EDITOR.png" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/i1 PODCAST EDITOR.png" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/Story/1.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <style>
+                .box img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            </style>
 
 
         </section>
+
 
 
         <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-screen pb-24"
@@ -883,35 +847,19 @@
             </svg>
 
 
-            <div class="text-center lg:-mt-10 mt-10" data-aos="fade-up">
-                <h1 class="text-4xl font-['Great_Vibes'] text-[#C66990]">My Sample Works</h1>
+
+
+            <div class="text-center lg:-mt-10 pb-20" data-aos="fade-up">
+                <h1 class="md:text-6xl text-4xl font-bold text-[#EB5A97]">CERTIFICATIONS</h1>
+
             </div>
-
-
-        </section>
-
-
-        <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-screen pb-24"
-            style="background-image: url(./images/Home.png);">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#EDC7DD" fill-opacity="1"
-                    d="M0,64L34.3,90.7C68.6,117,137,171,206,176C274.3,181,343,139,411,133.3C480,128,549,160,617,160C685.7,160,754,128,823,112C891.4,96,960,96,1029,128C1097.1,160,1166,224,1234,224C1302.9,224,1371,160,1406,128L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
-                </path>
-            </svg>
-
-
-
-            <div class="text-center lg:-mt-10 mt-10" data-aos="fade-up">
-                <h1 class="text-4xl font-['Great_Vibes'] text-[#C66990]">Certification</h1>
-            </div>
-
-
 
         </section>
 
     </main>
-
+    <script src="./js/app.js"></script>
     <!-- <script src="./js/cursor.js"></script> -->
+    <script src="./js/macy.js"></script>
 </body>
 
 </html>
