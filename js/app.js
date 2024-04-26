@@ -21,16 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Function to initialize Splide with appropriate perPage value
 function initSplide() {
-    var perPageValue = window.matchMedia("(max-width: 767px)").matches ? 2 : 4;
+    var perPageValue = window.matchMedia("(max-width: 767px)").matches ? 2 : 5;
 
     if (splide) {
         splide.destroy();
     }
 
-    splide = new Splide('.splide', {
+    var splide = new Splide('.splide', {
         type: 'loop',
         perPage: perPageValue,
-        autoplay: true,
+        focus: 'center',
+        autoplay: true,  
     });
 
     splide.mount();
@@ -55,7 +56,7 @@ var macy = Macy({
         1200: 5,
         940: 3,
         520: 2,
-        400: 1
+        400: 2
     }
 });
 
