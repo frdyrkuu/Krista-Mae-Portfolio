@@ -37,18 +37,27 @@
     <!-- Links -->
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/splide.min.css">
     <!-- Animation on scroll JS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/aos.js" defer></script>
 
     <!-- SPLIDE JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
 
     <!-- MACY JS -->
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+
 </head>
 
 
@@ -60,18 +69,10 @@
 <!-- #80254b #c66990 #eb5a97 #edc7dd #f6e0ed -->
 
 
-<body class="antialiased bg-[#F6E0ED] overflow-x-hidden scroll-smooth" id="body"
+<body x-data="{ openMenu : false }" class=" antialiased bg-[#F6E0ED] overflow-x-hidden scroll-smooth"
+    :class="openMenu ? 'overflow-hidden' : 'overflow-visible'" id="body"
     style="cursor: url('https://www.cursor.cc/cursor/812/178/cursor.png') 20 20, auto;">
 
-    <!-- <section class="hidden mx-auto items-center h-screen justify-center animate-pulse" id="loader">
-        <div>
-            <img src="./images/Self Logo.svg" alt="" class="h-20 w-20 mx-auto flex">
-            <h1 class="font-brownsugar tracking-wider md:text-4xl text-xl text-[#EB5A97] font-semibold">KRISTA
-                HAINTO
-            </h1>
-            <h3 class="text-center font-['Great_Vibes'] text-[#EB5A97] text-2xl mt-10">Now loading . . .</h3>
-        </div>
-    </section> -->
     <!-- Main Landing Page -->
     <main class="" id="main">
         <!-- Navigation Bar -->
@@ -190,7 +191,7 @@
             <!-- Hamburger -->
             <nav class="items-center space-x-4 gap-8 lg:hidden flex text-[#EB5A97]">
                 <button class="rounded-lg focus:border border-pink-400 p-1 focus:bg-pink-400/30" id="hamburger"
-                    onclick="hamburger()">
+                    @click="openMenu = !openMenu">
                     <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -205,109 +206,98 @@
             </nav>
         </header>
 
-        <!-- Hamburger content -->
-        <section class="relative lg:hidden invisible  z-10" id="hamburger_content">
-            <div class="grid grid-cols-2">
-                <div class="bg-[#F6E0ED] opacity-40 h-screen w-1/2  absolute z-10"></div>
-                <div class="bg-[#F6E0ED] h-screen w-1/2 absolute right-0 z-10 border border-pink-200 rounded-md">
-                    <div class="flex mx-auto items-center justify-center mt-20">
-                        <nav class="flex flex-col gap-10 items-center justify-center mx-auto text-[#EB5A97]">
-                            <ul>
-                                <li class="flex justify-center items-center gap-2">
-                                    <svg class="flex items-center justify-center mx-auto" width="20px" height="20px"
-                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <path
-                                                d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
-                                                fill="#EB5A97"></path>
-                                        </g>
-                                    </svg>
-                                    <a href=""
-                                        class="relative text-md font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#EB5A97] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Services</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li class="flex items-center gap-2">
-                                    <svg class="flex items-center justify-center mx-auto" fill="#EB5A97" width="15px"
-                                        height="15px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
-                                        stroke="#EB5A97" stroke-width="0.44800000000000006">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <title></title>
-                                            <g data-name="Layer 13" id="Layer_13">
-                                                <path
-                                                    d="M57,11H42V8.06A5.07,5.07,0,0,0,36.94,3H27.06A5.07,5.07,0,0,0,22,8.06V11H7a4,4,0,0,0-4,4V30a5,5,0,0,0,2,4V55a6,6,0,0,0,6,6H53a6,6,0,0,0,6-6V34a5,5,0,0,0,2-4V15A4,4,0,0,0,57,11ZM24,8.06A3.06,3.06,0,0,1,27.06,5h9.88A3.06,3.06,0,0,1,40,8.06V11H24ZM57,35V55a4,4,0,0,1-4,4H11a4,4,0,0,1-4-4V35h4v5a3,3,0,0,0,6,0V35H29v2a3,3,0,0,0,6,0V35H47v5a3,3,0,0,0,6,0V35h4ZM13,40V30a1,1,0,0,1,2,0V40a1,1,0,0,1-2,0Zm18-3V33a1,1,0,0,1,2,0v4a1,1,0,0,1-2,0Zm18,3V30a1,1,0,0,1,2,0V40a1,1,0,0,1-2,0ZM59,30a3,3,0,0,1-3,3H53V30a3,3,0,0,0-6,0v3H35a3,3,0,0,0-6,0H17V30a3,3,0,0,0-6,0v3H8a3,3,0,0,1-3-3V15a2,2,0,0,1,2-2H57a2,2,0,0,1,2,2Z">
-                                                </path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <a href=""
-                                        class="relative text-md font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#EB5A97] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Works</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li class="flex items-center gap-2">
-                                    <svg class="flex items-center justify-center mx-auto" width="20px" height="20px"
-                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <path opacity="0.1"
-                                                d="M13.8179 4.54512L13.6275 4.27845C12.8298 3.16176 11.1702 3.16176 10.3725 4.27845L10.1821 4.54512C9.76092 5.13471 9.05384 5.45043 8.33373 5.37041L7.48471 5.27608C6.21088 5.13454 5.13454 6.21088 5.27608 7.48471L5.37041 8.33373C5.45043 9.05384 5.13471 9.76092 4.54512 10.1821L4.27845 10.3725C3.16176 11.1702 3.16176 12.8298 4.27845 13.6275L4.54512 13.8179C5.13471 14.2391 5.45043 14.9462 5.37041 15.6663L5.27608 16.5153C5.13454 17.7891 6.21088 18.8655 7.48471 18.7239L8.33373 18.6296C9.05384 18.5496 9.76092 18.8653 10.1821 19.4549L10.3725 19.7215C11.1702 20.8382 12.8298 20.8382 13.6275 19.7215L13.8179 19.4549C14.2391 18.8653 14.9462 18.5496 15.6663 18.6296L16.5153 18.7239C17.7891 18.8655 18.8655 17.7891 18.7239 16.5153L18.6296 15.6663C18.5496 14.9462 18.8653 14.2391 19.4549 13.8179L19.7215 13.6275C20.8382 12.8298 20.8382 11.1702 19.7215 10.3725L19.4549 10.1821C18.8653 9.76092 18.5496 9.05384 18.6296 8.33373L18.7239 7.48471C18.8655 6.21088 17.7891 5.13454 16.5153 5.27608L15.6663 5.37041C14.9462 5.45043 14.2391 5.13471 13.8179 4.54512Z"
-                                                fill="#EB5A97"></path>
-                                            <path
-                                                d="M13.8179 4.54512L13.6275 4.27845C12.8298 3.16176 11.1702 3.16176 10.3725 4.27845L10.1821 4.54512C9.76092 5.13471 9.05384 5.45043 8.33373 5.37041L7.48471 5.27608C6.21088 5.13454 5.13454 6.21088 5.27608 7.48471L5.37041 8.33373C5.45043 9.05384 5.13471 9.76092 4.54512 10.1821L4.27845 10.3725C3.16176 11.1702 3.16176 12.8298 4.27845 13.6275L4.54512 13.8179C5.13471 14.2391 5.45043 14.9462 5.37041 15.6663L5.27608 16.5153C5.13454 17.7891 6.21088 18.8655 7.48471 18.7239L8.33373 18.6296C9.05384 18.5496 9.76092 18.8653 10.1821 19.4549L10.3725 19.7215C11.1702 20.8382 12.8298 20.8382 13.6275 19.7215L13.8179 19.4549C14.2391 18.8653 14.9462 18.5496 15.6663 18.6296L16.5153 18.7239C17.7891 18.8655 18.8655 17.7891 18.7239 16.5153L18.6296 15.6663C18.5496 14.9462 18.8653 14.2391 19.4549 13.8179L19.7215 13.6275C20.8382 12.8298 20.8382 11.1702 19.7215 10.3725L19.4549 10.1821C18.8653 9.76092 18.5496 9.05384 18.6296 8.33373L18.7239 7.48471C18.8655 6.21088 17.7891 5.13454 16.5153 5.27608L15.6663 5.37041C14.9462 5.45043 14.2391 5.13471 13.8179 4.54512Z"
-                                                stroke="#EB5A97" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                            <path
-                                                d="M9 12L10.8189 13.8189V13.8189C10.9189 13.9189 11.0811 13.9189 11.1811 13.8189V13.8189L15 10"
-                                                stroke="#EB5A97" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                        </g>
-                                    </svg>
-                                    <a href=""
-                                        class="relative text-md font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#EB5A97] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Certifications</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li class="flex items-center gap-2">
-                                    <svg class="flex items-center justify-center mx-auto" fill="#EB5A97" width="20px"
-                                        height="20px" viewBox="0 0 32 32"
-                                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <g id="Layer1">
-                                                <path
-                                                    d="M16,2c-7.727,0 -14,6.273 -14,14c0,7.727 6.273,14 14,14c7.727,0 14,-6.273 14,-14c-0,-7.727 -6.273,-14 -14,-14Zm-6.729,10.345l0.15,0.259l6.23,10.792l0.866,0.5c0,0 -0.861,-0.493 -0.861,-0.493l0.15,0.26c0.475,0.824 1.378,1.386 2.555,1.483c0.993,0.082 2.117,-0.184 3.119,-0.763c1.121,-0.647 2.118,-1.223 2.118,-1.223c0.478,-0.276 0.642,-0.887 0.366,-1.366l-2.077,-3.597c-0.276,-0.478 -0.888,-0.642 -1.366,-0.366l-0.866,0.5c0,-0 -3.846,-6.662 -3.846,-6.662c-0,0 0.866,-0.5 0.866,-0.5c0.478,-0.276 0.642,-0.888 0.366,-1.366l-2.077,-3.597c-0.276,-0.479 -0.888,-0.642 -1.366,-0.366c0,-0 -0.997,0.575 -2.118,1.223c-1.002,0.578 -1.795,1.419 -2.22,2.319c-0.505,1.068 -0.469,2.131 0.006,2.955l0.005,0.008Zm8.117,10.058l-6.39,-11.066c-0.177,-0.307 -0.118,-0.702 0.07,-1.1c0.267,-0.566 0.782,-1.079 1.412,-1.442c0,-0 1.252,-0.723 1.252,-0.723c0,-0 1.077,1.865 1.077,1.865c-0,0 -0.866,0.5 -0.866,0.5c-0.478,0.276 -0.642,0.888 -0.366,1.366l4.846,8.394c0.276,0.478 0.888,0.642 1.366,0.366l0.866,-0.5c0,-0 1.077,1.865 1.077,1.865c0,0 -1.252,0.723 -1.252,0.723c-0.63,0.364 -1.331,0.553 -1.955,0.502c-0.43,-0.035 -0.794,-0.176 -0.976,-0.47l-0.161,-0.28Z">
-                                                </path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <a href=""
-                                        class="relative text-md font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#EB5A97] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Contact
-                                        Me</a>
-                                </li>
-                            </ul>
+        <nav id="mobile-navigation" class="fixed top-0 right-0 bottom-0 left-0 backdrop-blur-sm z-10"
+            :class="openMenu ? 'visible' : 'invisible' " x-cloak>
 
-                            <ul class="mt-52 text-center text-xs px-2">
-                                <li><a href="">All rights reserve | 2024 Krista Mae Hainto</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!-- UL Links -->
+            <ul
+                class="absolute top-0 text-[#EB5A97] right-0 bottom-0 w-1/2 py-4 bg-[#F6E0ED] drop-shadow-2xl z-10 transition-all">
 
+                <li class="border-b border-inherit mt-20">
+                    <a href="#" class="flex justify-center items-center mx-auto gap-2 p-4"> <svg class="" width="24px"
+                            height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+                                    fill="#EB5A97"></path>
+                            </g>
+                        </svg>
+                        <h1>Services</h1>
+                    </a>
+                </li>
+                <li class="border-b border-inherit">
+                    <a href="#" class="flex justify-center items-center mx-auto gap-2 p-4"> <svg fill="#EB5A97"
+                            width="24px" height="24px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                            stroke="#EB5A97" stroke-width="0.44800000000000006">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title></title>
+                                <g data-name="Layer 13" id="Layer_13">
+                                    <path
+                                        d="M57,11H42V8.06A5.07,5.07,0,0,0,36.94,3H27.06A5.07,5.07,0,0,0,22,8.06V11H7a4,4,0,0,0-4,4V30a5,5,0,0,0,2,4V55a6,6,0,0,0,6,6H53a6,6,0,0,0,6-6V34a5,5,0,0,0,2-4V15A4,4,0,0,0,57,11ZM24,8.06A3.06,3.06,0,0,1,27.06,5h9.88A3.06,3.06,0,0,1,40,8.06V11H24ZM57,35V55a4,4,0,0,1-4,4H11a4,4,0,0,1-4-4V35h4v5a3,3,0,0,0,6,0V35H29v2a3,3,0,0,0,6,0V35H47v5a3,3,0,0,0,6,0V35h4ZM13,40V30a1,1,0,0,1,2,0V40a1,1,0,0,1-2,0Zm18-3V33a1,1,0,0,1,2,0v4a1,1,0,0,1-2,0Zm18,3V30a1,1,0,0,1,2,0V40a1,1,0,0,1-2,0ZM59,30a3,3,0,0,1-3,3H53V30a3,3,0,0,0-6,0v3H35a3,3,0,0,0-6,0H17V30a3,3,0,0,0-6,0v3H8a3,3,0,0,1-3-3V15a2,2,0,0,1,2-2H57a2,2,0,0,1,2,2Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h1>Works</h1>
+                    </a>
+                </li>
+                <li class="border-b border-inherit">
+                    <a href="#" class="flex justify-center items-center mx-auto gap-2 p-4"> <svg width="24px"
+                            height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path opacity="0.1"
+                                    d="M13.8179 4.54512L13.6275 4.27845C12.8298 3.16176 11.1702 3.16176 10.3725 4.27845L10.1821 4.54512C9.76092 5.13471 9.05384 5.45043 8.33373 5.37041L7.48471 5.27608C6.21088 5.13454 5.13454 6.21088 5.27608 7.48471L5.37041 8.33373C5.45043 9.05384 5.13471 9.76092 4.54512 10.1821L4.27845 10.3725C3.16176 11.1702 3.16176 12.8298 4.27845 13.6275L4.54512 13.8179C5.13471 14.2391 5.45043 14.9462 5.37041 15.6663L5.27608 16.5153C5.13454 17.7891 6.21088 18.8655 7.48471 18.7239L8.33373 18.6296C9.05384 18.5496 9.76092 18.8653 10.1821 19.4549L10.3725 19.7215C11.1702 20.8382 12.8298 20.8382 13.6275 19.7215L13.8179 19.4549C14.2391 18.8653 14.9462 18.5496 15.6663 18.6296L16.5153 18.7239C17.7891 18.8655 18.8655 17.7891 18.7239 16.5153L18.6296 15.6663C18.5496 14.9462 18.8653 14.2391 19.4549 13.8179L19.7215 13.6275C20.8382 12.8298 20.8382 11.1702 19.7215 10.3725L19.4549 10.1821C18.8653 9.76092 18.5496 9.05384 18.6296 8.33373L18.7239 7.48471C18.8655 6.21088 17.7891 5.13454 16.5153 5.27608L15.6663 5.37041C14.9462 5.45043 14.2391 5.13471 13.8179 4.54512Z"
+                                    fill="#EB5A97"></path>
+                                <path
+                                    d="M13.8179 4.54512L13.6275 4.27845C12.8298 3.16176 11.1702 3.16176 10.3725 4.27845L10.1821 4.54512C9.76092 5.13471 9.05384 5.45043 8.33373 5.37041L7.48471 5.27608C6.21088 5.13454 5.13454 6.21088 5.27608 7.48471L5.37041 8.33373C5.45043 9.05384 5.13471 9.76092 4.54512 10.1821L4.27845 10.3725C3.16176 11.1702 3.16176 12.8298 4.27845 13.6275L4.54512 13.8179C5.13471 14.2391 5.45043 14.9462 5.37041 15.6663L5.27608 16.5153C5.13454 17.7891 6.21088 18.8655 7.48471 18.7239L8.33373 18.6296C9.05384 18.5496 9.76092 18.8653 10.1821 19.4549L10.3725 19.7215C11.1702 20.8382 12.8298 20.8382 13.6275 19.7215L13.8179 19.4549C14.2391 18.8653 14.9462 18.5496 15.6663 18.6296L16.5153 18.7239C17.7891 18.8655 18.8655 17.7891 18.7239 16.5153L18.6296 15.6663C18.5496 14.9462 18.8653 14.2391 19.4549 13.8179L19.7215 13.6275C20.8382 12.8298 20.8382 11.1702 19.7215 10.3725L19.4549 10.1821C18.8653 9.76092 18.5496 9.05384 18.6296 8.33373L18.7239 7.48471C18.8655 6.21088 17.7891 5.13454 16.5153 5.27608L15.6663 5.37041C14.9462 5.45043 14.2391 5.13471 13.8179 4.54512Z"
+                                    stroke="#EB5A97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M9 12L10.8189 13.8189V13.8189C10.9189 13.9189 11.0811 13.9189 11.1811 13.8189V13.8189L15 10"
+                                    stroke="#EB5A97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                        <h1>Certification</h1>
+                    </a>
+                </li>
+                <li class="border-b border-inherit">
+                    <a href="#" class="flex justify-center items-center mx-auto gap-2 p-4"> <svg fill="#EB5A97"
+                            width="24px" height="24px" viewBox="0 0 32 32"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                            version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="Layer1">
+                                    <path
+                                        d="M16,2c-7.727,0 -14,6.273 -14,14c0,7.727 6.273,14 14,14c7.727,0 14,-6.273 14,-14c-0,-7.727 -6.273,-14 -14,-14Zm-6.729,10.345l0.15,0.259l6.23,10.792l0.866,0.5c0,0 -0.861,-0.493 -0.861,-0.493l0.15,0.26c0.475,0.824 1.378,1.386 2.555,1.483c0.993,0.082 2.117,-0.184 3.119,-0.763c1.121,-0.647 2.118,-1.223 2.118,-1.223c0.478,-0.276 0.642,-0.887 0.366,-1.366l-2.077,-3.597c-0.276,-0.478 -0.888,-0.642 -1.366,-0.366l-0.866,0.5c0,-0 -3.846,-6.662 -3.846,-6.662c-0,0 0.866,-0.5 0.866,-0.5c0.478,-0.276 0.642,-0.888 0.366,-1.366l-2.077,-3.597c-0.276,-0.479 -0.888,-0.642 -1.366,-0.366c0,-0 -0.997,0.575 -2.118,1.223c-1.002,0.578 -1.795,1.419 -2.22,2.319c-0.505,1.068 -0.469,2.131 0.006,2.955l0.005,0.008Zm8.117,10.058l-6.39,-11.066c-0.177,-0.307 -0.118,-0.702 0.07,-1.1c0.267,-0.566 0.782,-1.079 1.412,-1.442c0,-0 1.252,-0.723 1.252,-0.723c0,-0 1.077,1.865 1.077,1.865c-0,0 -0.866,0.5 -0.866,0.5c-0.478,0.276 -0.642,0.888 -0.366,1.366l4.846,8.394c0.276,0.478 0.888,0.642 1.366,0.366l0.866,-0.5c0,-0 1.077,1.865 1.077,1.865c0,0 -1.252,0.723 -1.252,0.723c-0.63,0.364 -1.331,0.553 -1.955,0.502c-0.43,-0.035 -0.794,-0.176 -0.976,-0.47l-0.161,-0.28Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h1>Contact Me</h1>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Close Button -->
+            <button class="absolute top-0 right-0 bottom-0 left-0" @click="openMenu = !openMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute top-2 left-2" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+        </nav>
 
         <div class="max-w-7xl mx-auto bg-no-repeat" style="background-image: url(./images/Home.png);">
             <section
@@ -352,7 +342,7 @@
                     </div>
                 </article>
                 <div class="">
-                    <img src="./images/landing page.png" alt="Krista-Mae" class="lg:w-[800px] w-full" loading="lazy">
+                    <img src="./images/landing page.png" alt="Krista-Mae" class="lg:w-[800px] w-full">
                 </div>
             </section>
         </div>
@@ -720,7 +710,7 @@
                         <div class="box" data-aos="zoomAndPan">
                             <img src="./images/IG POSTS/1 (1).png" alt="">
                         </div>
-                       
+
                     </div>
 
                     <div class="flex mx-auto items-center justify-center">
@@ -758,7 +748,7 @@
                 </path>
             </svg>
 
-            <div class="text-center pb-20" data-aos="fade-up">
+            <div class="text-center pb-20 lg:-mt-40">
                 <h1 class="md:text-6xl text-4xl font-bold text-[#EB5A97]">CERTIFICATIONS</h1>
                 <style>
                     .splide__slide img {
@@ -766,38 +756,42 @@
                         height: auto;
                     }
                 </style>
-                
 
-                <section class="splide pt-20" aria-label="Certifications">
-                    <div class="splide__track flex mx-auto items-center justify-center">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img data-src="./images/Certificates/Hainto.png" alt="certs" border="0" class="w-auto h-[70px]">
-                            </li>
-                            <li class="splide__slide">
-                                <img data-src="./images/Certificates/khainto-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel-1.png"
-                                    alt="certs" border="0" class="w-auto h-[70px]">
-                            </li>
-                            <li class="splide__slide">
-                                <img data-src="./images/Certificates/Krista-Mae-Hainto-Copywriting-Coffee-Copywriting-Kurso.ph-1.png"
-                                    alt="certs" border="0" class="w-auto h-[50px]">
-                            </li>
-                            <li class="splide__slide">
-                                <img data-src="./images/Certificates/Krista-Mae-Hainto-Email-Copywriting-Course-Email-Copywriting-Course-Kurso.ph-1.png"
-                                    alt="certs" border="0" class="w-auto h-[50px]">
-                            </li>
-                            <li class="splide__slide">
-                                <img data-src="./images/Certificates/Krista-Mae-Hainto-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph-1.png"
-                                    alt="certs" border="0" class="w-auto h-[50px]">
-                            </li>
-                            <li class="splide__slide">
-                                <img data-src="./images/Certificates/Krista-Mae-Hainto-Social-Media-Management-Social-Media-Management-Kurso.ph-1.png"
-                                    alt="certs" border="0" class="w-auto h-[50px]">
-                            </li>
-                        </ul>
+                <section class="flex mx-auto items-center mt-20">
+                    <div class="flex mx-auto">
+                        <div class="">
+                            <div class="">
+                                <div class="splide">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide"><img src="./images/Certificates/Hainto.png"
+                                                    alt=""></li>
+                                            <li class="splide__slide"><img
+                                                    src="./images/Certificates/khainto-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel-1.png"
+                                                    alt=""></li>
+                                            <li class="splide__slide"><img
+                                                    src="./images/Certificates/Krista-Mae-Hainto-Copywriting-Coffee-Copywriting-Kurso.ph-1.png"
+                                                    alt=""></li>
+                                            <li class="splide__slide"><img
+                                                    src="./images/Certificates/Krista-Mae-Hainto-Email-Copywriting-Course-Email-Copywriting-Course-Kurso.ph-1.png"
+                                                    alt=""></li>
+                                            <li class="splide__slide"><img
+                                                    src="./images/Certificates/Krista-Mae-Hainto-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph-1.png"
+                                                    alt=""></li>
+                                            <li class="splide__slide"><img
+                                                    src="./images/Certificates/Krista-Mae-Hainto-Social-Media-Management-Social-Media-Management-Kurso.ph-1.png"
+                                                    alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
+                <script>
+                  
+                </script>
 
             </div>
         </section>
@@ -806,6 +800,7 @@
 
     </main>
 
+    <script src="./js/splide.js"></script>
     <script src="./js/app.js"></script>
     <!-- <script src="./js/cursor.js"></script> -->
     <script src="./js/macy.js"></script>
