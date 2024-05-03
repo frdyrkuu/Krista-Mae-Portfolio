@@ -4,46 +4,14 @@
                     <span class="text-4xl mx-4">✨</span>
                     <span class="text-4xl mx-4"><img src="./images/Adobe_Photoshop_CC_icon.png"
                             class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_After_Effects_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Premier_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/canva.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/ig.png" class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/2023_Facebook_icon.svg.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/youtube.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
+                
                 </div>
 
                 <div class="flex absolute top-0 py-12 animate-marquee2 whitespace-nowrap font-bold">
                     <span class="text-4xl mx-4">✨</span>
                     <span class="text-4xl mx-4"><img src="./images/Adobe_Photoshop_CC_icon.png"
                             class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_After_Effects_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Premier_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/canva.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/ig.png" class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/2023_Facebook_icon.svg.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/youtube.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
+              
                 </div>
             </div> -->
 
@@ -54,46 +22,13 @@
                     <span class="text-4xl mx-4">✨</span>
                     <span class="text-4xl mx-4"><img src="./images/Adobe_Photoshop_CC_icon.png"
                             class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_After_Effects_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Premier_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/canva.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/ig.png" class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/2023_Facebook_icon.svg.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/youtube.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-
+              
                 </div>
 
                 <div class="flex absolute top-0 py-12 animate-marquee4 whitespace-nowrap font-bold">
                     <span class="text-4xl mx-4">✨</span>
                     <span class="text-4xl mx-4"><img src="./images/Adobe_Photoshop_CC_icon.png"
                             class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_After_Effects_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/Adobe_Premier_CC_icon.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/canva.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/ig.png" class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/2023_Facebook_icon.svg.png"
-                            class="h-14 w-14 rounded-full" alt=""></span>
-                    <span class="text-4xl mx-4">✨</span>
-                    <span class="text-4xl mx-4"><img src="./images/youtube.png" class="h-14 w-14 rounded-full"
-                            alt=""></span>
+                 
                 </div>
             </div> -->
