@@ -6,6 +6,13 @@ function initSplide() {
 window.addEventListener("load", function () {
     initSplide();
     console.log("content loaded");
+
+    let e = document.getElementById("header");
+    window.addEventListener("scroll", function s() {
+        window.scrollY > 0
+            ? (e.classList.remove("bg-transparent"), e.classList.add("bg-[#F6E0ED]"), e.classList.add("bg-[shadow-lg]"))
+            : (e.classList.remove("bg-[#F6E0ED]"), e.classList.remove("shadow-lg"), e.classList.add("bg-transparent"));
+    });
 }),
 
 
@@ -25,12 +32,3 @@ function hamburger() {
             ? (t.classList.remove("invisible"), t.classList.add("flex"), e.classList.add("overflow-y-hidden"), e.classList.add("h-[100%]"))
             : (t.classList.add("invisible"), t.classList.remove("flex"), e.classList.remove("overflow-y-hidden"), e.classList.remove("h-[100%]")));
 }
-document.addEventListener("DOMContentLoaded", function () {
-    let e = document.getElementById("header");
-    window.addEventListener("scroll", function s() {
-        window.scrollY > 0
-            ? (e.classList.remove("bg-transparent"), e.classList.add("bg-[#F6E0ED]"), e.classList.add("bg-[shadow-lg]"))
-            : (e.classList.remove("bg-[#F6E0ED]"), e.classList.remove("shadow-lg"), e.classList.add("bg-transparent"));
-    });
-});
-
