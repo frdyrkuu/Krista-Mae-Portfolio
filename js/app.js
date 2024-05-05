@@ -4,6 +4,7 @@ function initSplide() {
 
 }
 window.addEventListener("load", function () {
+    AOS.init();
     initSplide();
     console.log("content loaded");
 

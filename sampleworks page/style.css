@@ -1,0 +1,140 @@
+img {
+    width: 100%;
+}
+
+.containerColcade {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.gridColcade {
+    display: flex;
+}
+
+.gridColcade-col {
+    flex: 1;
+    padding: 0 .1em;
+}
+
+.gridColcade-col--2,
+.gridColcade-col--3 {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    margin-top: 1em;
+
+    h2 {
+        margin: .2em .5em;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .containerColcade {
+        width: 90%;
+    }
+
+    h1 {
+        margin: 3em 0;
+    }
+
+    .gridColcade-col--2 {
+        display: block;
+    }
+
+    .gridColcade-col {
+        padding: 0 .5em;
+    }
+
+    img {
+        margin-bottom: .8em;
+    }
+
+    .content {
+        opacity: 0;
+        transform: translateX(-.5em);
+        transition: all 2s;
+        will-change: opacity, transform;
+    }
+
+    .gridColcade-item:hover {
+        cursor: pointer;
+
+        .content {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .gridColcade-col--3 {
+        display: block;
+    }
+
+    .containerColcade {
+        width: 80%;
+    }
+
+    h1 {
+        margin: 5em 0;
+    }
+}
+
+.spinner {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px solid #eb5a97;
+    margin: 10% 40%;
+    position: relative;
+    z-index: 1;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Apply pulse animation */
+  }
+  
+  @keyframes pulse {
+    50% {
+      opacity: 0.5; /* Change opacity to 0.5 at 50% of the animation */
+    }
+  }
+  
+  .spinner:before {
+    content: '';
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-top: 10px solid #ccc;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    z-index: 9;
+    top: -10px;
+    left: -10px;
+    animation: rt 2s infinite;
+  }
+  
+  @keyframes rt {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner img {
+    width: 60px;
+    /* Adjust size as needed */
+    height: 60px;
+    /* Adjust size as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
