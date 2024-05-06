@@ -72,6 +72,10 @@ img {
 }
 
 @media (min-width: 1080px) {
+    .gridColcade-col {
+        padding: 0 .5em;
+    }
+
     .gridColcade-col--3 {
         display: block;
     }
@@ -83,6 +87,8 @@ img {
     h1 {
         margin: 5em 0;
     }
+
+    
 }
 
 .spinner {
