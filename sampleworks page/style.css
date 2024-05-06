@@ -148,19 +148,19 @@ img {
 }
 
 body {
-    cursor: url('https://cdn.custom-cursor.com/db/4920/32/arrow2793.png') 20 20, auto;
+    cursor: url('https://cdn.custom-cursor.com/db/8102/32/minimal-heart-cursor.png') 20 20, auto;
 }
 
 img {
-    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
+    cursor: url('https://cdn.custom-cursor.com/db/8101/32/minimal-heart-pointer.png'), pointer;
 }
 
 
 a {
-    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
+    cursor: url('https://cdn.custom-cursor.com/db/8101/32/minimal-heart-pointer.png'), pointer;
 }
 
 /* For buttons */
 button {
-    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
+    cursor: url('https://cdn.custom-cursor.com/db/8101/32/minimal-heart-pointer.png'), pointer;
 }
