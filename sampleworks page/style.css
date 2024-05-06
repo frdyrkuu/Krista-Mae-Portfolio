@@ -88,7 +88,7 @@ img {
         margin: 5em 0;
     }
 
-    
+
 }
 
 .spinner {
@@ -99,16 +99,18 @@ img {
     margin: 10% 40%;
     position: relative;
     z-index: 1;
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Apply pulse animation */
-  }
-  
-  @keyframes pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    /* Apply pulse animation */
+}
+
+@keyframes pulse {
     50% {
-      opacity: 0.5; /* Change opacity to 0.5 at 50% of the animation */
+        opacity: 0.5;
+        /* Change opacity to 0.5 at 50% of the animation */
     }
-  }
-  
-  .spinner:before {
+}
+
+.spinner:before {
     content: '';
     width: 120px;
     height: 120px;
@@ -122,18 +124,19 @@ img {
     top: -10px;
     left: -10px;
     animation: rt 2s infinite;
-  }
-  
-  @keyframes rt {
+}
+
+@keyframes rt {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  .spinner img {
+}
+
+.spinner img {
     width: 60px;
     /* Adjust size as needed */
     height: 60px;
@@ -142,5 +145,22 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
+}
+
+body {
+    cursor: url('https://cdn.custom-cursor.com/db/4920/32/arrow2793.png') 20 20, auto;
+}
+
+img {
+    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
+}
+
+
+a {
+    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
+}
+
+/* For buttons */
+button {
+    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
+}

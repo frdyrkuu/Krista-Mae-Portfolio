@@ -1,3 +1,15 @@
+body {
+    cursor: url('https://cdn.custom-cursor.com/db/4920/32/arrow2793.png') 20 20, auto;
+}
+
+a {
+    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
+}
+
+/* For buttons */
+button {
+    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
+}
 .cta {
     display: flex;
     padding: 11px 33px;
@@ -92,6 +104,7 @@
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+    cursor: url('https://cdn.custom-cursor.com/db/4919/32/arrow2793.png'), pointer;
 }
 
 button.learn-more {
