@@ -1,6 +1,5 @@
-
+AOS.init();
 window.addEventListener("load", function () {
-  AOS.init();
 
   console.log("content loaded");
 
@@ -65,3 +64,4 @@ var splide = new Splide('.splide', {
 });
 
 splide.mount();
+
