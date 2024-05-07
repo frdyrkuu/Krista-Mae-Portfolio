@@ -2,14 +2,7 @@ body {
     cursor: url('https://cdn.custom-cursor.com/db/8102/32/minimal-heart-cursor.png') 20 20, auto;
 }
 
-a {
-    cursor: url('https://cdn.custom-cursor.com/db/8101/32/minimal-heart-pointer.png'), pointer;
-}
 
-/* For buttons */
-button {
-    cursor: url('https://cdn.custom-cursor.com/db/8101/32/minimal-heart-pointer.png'), pointer;
-}
 .cta {
     display: flex;
     padding: 11px 33px;
@@ -76,6 +69,42 @@ button {
 .cta:hover .two {
     transform: translateX(0%);
     animation: color_anim 1s infinite 0.4s;
+}
+
+.splide_img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.splide_wrapper {
+    padding: 50px 15px;
+    margin: 0 auto;
+}
+
+.splide__arrow {
+    opacity: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #EB5A97 !important;
+}
+
+
+.splide__arrow svg {
+    fill: hsl(335, 62%, 23%) !important;
+}
+
+.splide__pagination {
+    bottom: -2rem !important;
+}
+
+.slider_wrapper .splide__pagination__page.is-active {
+    background-color: #EB5A97 !important;
+}
+
+@media screen and (min-width: 640px) {
+    .slider_wrapper .splide{
+        padding: 0 4rem;
+    }
 }
 
 @keyframes color_anim {
@@ -244,18 +273,19 @@ button:hover .button-text {
     --clr-primary-900: hsl(218, 33%, 9%);
 }
 
+/* 
 html {
     color-scheme: dark;
-}
+} */
 
-body {
+/* body {
     display: grid;
     min-block-size: 100vh;
     place-content: center;
     font-family: system-ui;
     font-size: 1.125rem;
     background-color: var(--clr-primary-800);
-}
+} */
 
 .tag-list {
     margin: 0;

@@ -32,3 +32,103 @@
                  
                 </div>
             </div> -->
+
+   <div class="flex mx-auto items-start justify-center">
+                <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-2 px-2 justify-center">
+                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
+                        <div class="box">
+                            <div class="flex mx-auto items-center justify-center">
+                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                    Instagram Post
+                                </h1>
+                            </div>
+                            <img src="./images/Post/1.png" alt="sampleworks w-auto h-24">
+                            <a href="./sampleworks page/ig_post.html"
+                                class="flex mx-auto items-center justify-center mt-4">
+                                <button class="buttons learn-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Show More</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
+                        <div class="box">
+                            <div class="flex mx-auto items-center justify-center">
+                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                    Products
+                                </h1>
+                            </div>
+                            <img src="./images/Post/5.png" alt="sampleworks w-auto">
+                            <a href="./sampleworks page/product_post.html"
+                                class="flex mx-auto items-center justify-center mt-4">
+                                <button class="buttons learn-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Show More</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
+                        <div class="box">
+                            <div class="flex mx-auto items-center justify-center">
+                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl truncate">
+                                    Print Media
+                                </h1>
+                            </div>
+                            <img src="./images/Brochure/5.png" alt="sampleworks w-auto">
+                            <a href="./sampleworks page/brochure_post.html"
+                                class="flex mx-auto items-center justify-center mt-4">
+                                <button class="buttons learn-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Show More</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
+                        <div class="box">
+                            <div class="flex mx-auto items-center justify-center">
+                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                    Stories
+                                </h1>
+                            </div>
+                            <img src="./images/Story/1.png" alt="sampleworks w-auto">
+                            <a href="./sampleworks page/stories_post.html"
+                                class="flex mx-auto items-center justify-center mt-4">
+                                <button class="buttons learn-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Show More</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
+                        <div class="box">
+                            <div class="flex mx-auto items-center justify-center">
+                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                    Reels/Shorts
+                                </h1>
+                            </div>
+                            <img src="./images/Reels/Reel 4.gif" alt="sampleworks w-auto">
+                            <a href="./sampleworks page/reels_post.html"
+                                class="flex mx-auto items-center justify-center mt-4">
+                                <button class="buttons learn-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Show More</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>

@@ -40,23 +40,17 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/splide.min.css">
     <!-- Animation on scroll JS -->
+    <script src="https://unpkg.com/alpinejs@3.13.10/dist/cdn.min.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- SPLIDE JS -->
-    <script src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
-    <link href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
 
-    <!-- MACY JS -->
-    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 
-    <script src="//unpkg.com/alpinejs" defer></script>
 
 </head>
 
@@ -605,108 +599,119 @@
                 </path>
             </svg>
 
-            <div class="text-center lg:-mt-10 pb-20" data-aos="fade-up">
+            <div class="text-center lg:-mt-20" data-aos="fade-up">
                 <h1 class="md:text-6xl text-4xl font-bold text-[#EB5A97] px-4">MY SAMPLE WORKS</h1>
             </div>
 
-            <div class="flex mx-auto items-start justify-center">
-                <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-2 px-2 justify-center">
-                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
-                        <div class="box">
-                            <div class="flex mx-auto items-center justify-center">
-                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
-                                    Instagram Post
-                                </h1>
+            <div class="splide_wrapper">
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list" data-aos="zoomAndPan">
+                            <!-- Insert the list images here -->
+                            <div class="splide__slide">
+                                <div class="img_box">
+                                    <div class="flex mx-auto items-center justify-center">
+                                        <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                            Post
+                                        </h1>
+                                    </div>
+                                    <img src="images/Post/1.png" alt="Post" class="splide_img">
+                                    <a href="./sampleworks page/ig_post.html"
+                                        class="flex mx-auto items-center justify-center mt-4">
+                                        <button class="buttons learn-more">
+                                            <span class="circle" aria-hidden="true">
+                                                <span class="icon arrow"></span>
+                                            </span>
+                                            <span class="button-text">Show More</span>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                            <img src="./images/Post/1.png" alt="sampleworks w-auto h-24">
-                            <a href="./sampleworks page/ig_post.html"
-                                class="flex mx-auto items-center justify-center mt-4">
-                                <button class="buttons learn-more">
-                                    <span class="circle" aria-hidden="true">
-                                        <span class="icon arrow"></span>
-                                    </span>
-                                    <span class="button-text">Show More</span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
-                        <div class="box">
-                            <div class="flex mx-auto items-center justify-center">
-                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
-                                    Products
-                                </h1>
+
+                            <div class="splide__slide">
+                                <div class="img_box">
+                                    <div class="flex mx-auto items-center justify-center">
+                                        <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                            Stories
+                                        </h1>
+                                    </div>
+                                    <img src="images/Story/1.png" alt="Post" class="splide_img">
+                                    <a href="./sampleworks page/stories_post.html"
+                                        class="flex mx-auto items-center justify-center mt-4">
+                                        <button class="buttons learn-more">
+                                            <span class="circle" aria-hidden="true">
+                                                <span class="icon arrow"></span>
+                                            </span>
+                                            <span class="button-text">Show More</span>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                            <img src="./images/Post/5.png" alt="sampleworks w-auto">
-                            <a href="./sampleworks page/product_post.html"
-                                class="flex mx-auto items-center justify-center mt-4">
-                                <button class="buttons learn-more">
-                                    <span class="circle" aria-hidden="true">
-                                        <span class="icon arrow"></span>
-                                    </span>
-                                    <span class="button-text">Show More</span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
-                        <div class="box">
-                            <div class="flex mx-auto items-center justify-center">
-                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl truncate">
-                                    Print Media
-                                </h1>
+
+                            <div class="splide__slide">
+                                <div class="img_box">
+                                    <div class="flex mx-auto items-center justify-center">
+                                        <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                            Reels
+                                        </h1>
+                                    </div>
+                                    <img src="images/Reels/Reel 3.gif" alt="Post" class="splide_img">
+                                    <a href="./sampleworks page/reels_post.html"
+                                        class="flex mx-auto items-center justify-center mt-4">
+                                        <button class="buttons learn-more">
+                                            <span class="circle" aria-hidden="true">
+                                                <span class="icon arrow"></span>
+                                            </span>
+                                            <span class="button-text">Show More</span>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                            <img src="./images/Brochure/5.png" alt="sampleworks w-auto">
-                            <a href="./sampleworks page/brochure_post.html"
-                                class="flex mx-auto items-center justify-center mt-4">
-                                <button class="buttons learn-more">
-                                    <span class="circle" aria-hidden="true">
-                                        <span class="icon arrow"></span>
-                                    </span>
-                                    <span class="button-text">Show More</span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
-                        <div class="box">
-                            <div class="flex mx-auto items-center justify-center">
-                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
-                                    Stories
-                                </h1>
+
+                            <div class="splide__slide">
+                                <div class="img_box">
+                                    <div class="flex mx-auto items-center justify-center">
+                                        <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                            Print Media
+                                        </h1>
+                                    </div>
+                                    <img src="images/Brochure/5.png" alt="Post" class="splide_img">
+                                    <a href="./sampleworks page/brochure_post.html"
+                                        class="flex mx-auto items-center justify-center mt-4">
+                                        <button class="buttons learn-more">
+                                            <span class="circle" aria-hidden="true">
+                                                <span class="icon arrow"></span>
+                                            </span>
+                                            <span class="button-text">Show More</span>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                            <img src="./images/Story/1.png" alt="sampleworks w-auto">
-                            <a href="./sampleworks page/stories_post.html"
-                                class="flex mx-auto items-center justify-center mt-4">
-                                <button class="buttons learn-more">
-                                    <span class="circle" aria-hidden="true">
-                                        <span class="icon arrow"></span>
-                                    </span>
-                                    <span class="button-text">Show More</span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-1 " data-aos="zoomAndPan">
-                        <div class="box">
-                            <div class="flex mx-auto items-center justify-center">
-                                <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
-                                    Reels/Shorts
-                                </h1>
+
+                            <div class="splide__slide">
+                                <div class="img_box">
+                                    <div class="flex mx-auto items-center justify-center">
+                                        <h1 class="py-4 text-center text-[#C66990] font-bold text-xl">
+                                            Posted Works
+                                        </h1>
+                                    </div>
+                                    <img src="images/Posted Works/Posted Works.png" alt="Post" class="splide_img">
+                                    <a href="./sampleworks page/brochure_post.html"
+                                        class="flex mx-auto items-center justify-center mt-4">
+                                        <button class="buttons learn-more">
+                                            <span class="circle" aria-hidden="true">
+                                                <span class="icon arrow"></span>
+                                            </span>
+                                            <span class="button-text">Show More</span>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                            <img src="./images/Reels/Reel 4.gif" alt="sampleworks w-auto">
-                            <a href="./sampleworks page/reels_post.html" class="flex mx-auto items-center justify-center mt-4">
-                                <button class="buttons learn-more">
-                                    <span class="circle" aria-hidden="true">
-                                        <span class="icon arrow"></span>
-                                    </span>
-                                    <span class="button-text">Show More</span>
-                                </button>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
 
         </section>
         <!-- Certifications -->
@@ -727,7 +732,7 @@
                     }
                 </style>
 
-                <section class="flex mx-auto items-center mt-20" data-aos="zoomAndPan">
+                <!-- <section class="flex mx-auto items-center mt-20" data-aos="zoomAndPan">
                     <div class="flex mx-auto">
                         <div class="">
                             <div class="">
@@ -758,7 +763,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
+            </div> -->
         </section>
 
         <section class="items-center gap-4 md:bg-center md:bg-no-repeat bg-cover bg-blend-screen h-auto"
@@ -771,7 +776,7 @@
 
             <div class="max-w-7xl mx-auto px-5">
                 <div class="flex flex-col justify-center">
-                    <div class="text-center">
+                    <div class="text-center" data-aos="fade-up">
 
                         <h1 class="md:text-6xl text-4xl text-center font-bold text-[rgb(235,90,151)]">SOFTWARES</h1>
                         <h2 class="text-3xl font-['Great_Vibes'] text-[rgb(235,90,151)] pt-4">Softwares and Social Media
@@ -779,20 +784,17 @@
                             that I use</h2>
                         <p class="w-full px-4 mx-auto my-4 md:text-xl text-md text-[#C66990] font-semibold">
                             My virtual assistant toolkit comprises essential software and tools tailored for diverse
-                            tasks.
-                            For graphic design and multimedia, I utilize Photoshop, Premiere Pro, and Canva. Google
-                            Suite
-                            aids in communication and collaboration, while social media management is facilitated
-                            through
-                            Facebook, Instagram, TikTok, and YouTube. These tools enable me to efficiently handle tasks
-                            and
-                            provide top-notch assistance to clients.
+                            tasks. For graphic design and multimedia, I utilize Photoshop, Premiere Pro, and Canva.
+                            Google Suite, WhatsApp, Viber and Discord aids in communication and collaboration, while
+                            social media management is facilitated through Facebook, Instagram, TikTok, and YouTube.
+                            These tools enable me to efficiently handle tasks and provide top-notch assistance to
+                            clients.
                         </p>
 
                     </div>
 
 
-                    <div class="flex flex-wrap items-center justify-center gap-10 mt-20 md:justify-around">
+                    <div class="flex flex-wrap items-center justify-center gap-10 mt-20 md:justify-around" data-aos="zoomAndPan">
                         <div class="text-gray-400 ">
                             <img src="./images/photoshop.png" alt="photoshop" class="w-auto h-[4rem]">
                         </div>
@@ -877,7 +879,7 @@
                     <img class="object-cover w-full h-full rounded-2xl" src="./images/krista-img (2).jpg" alt="picture">
                 </div>
 
-                <article class="sm:w-1/2">
+                <article class="sm:w-1/2" data-aos="fade-up-left">
                     <h2 class="md:text-6xl font-extrabold text-center text-4xl text-[#EB5A97]">
                         LET'S WORK TOGETHER
                     </h2>
@@ -967,7 +969,7 @@
             </div>
         </section>
     </main>
-    <script src="./js/splide.js"></script>
+    <!-- <script src="./js/splide.js"></script> -->
     <script src="./js/app.js"></script>
     <!-- <script src="./js/cursor.js"></script> -->
     <script src="./js/aos.js" defer></script>

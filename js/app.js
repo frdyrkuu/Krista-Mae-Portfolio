@@ -1,11 +1,7 @@
-function initSplide() {
-    var e = window.matchMedia("(max-width: 767px)").matches ? 2 : 4;
-    splide && splide.destroy(), (splide = new Splide(".splide", { type: "loop", focus: "center", autoplay: !0, height: "15rem", perPage: e })).mount();
 
-}
 window.addEventListener("load", function () {
     AOS.init();
-    initSplide();
+
     console.log("content loaded");
 
     let e = document.getElementById("header");
@@ -17,13 +13,6 @@ window.addEventListener("load", function () {
 }),
 
 
-
-    window.addEventListener("resize", function () {
-        initSplide();
-    });
-
-var splide,
-    macy = Macy({ container: "#macy", trueOrder: !1, waitForImages: !1, margin: 24, columns: 4, breakAt: { 1200: 4, 940: 2, 520: 2, 400: 2 } });
 function hamburger() {
     var e = document.getElementById("body"),
         s = document.getElementById("hamburger"),
@@ -33,3 +22,45 @@ function hamburger() {
             ? (t.classList.remove("invisible"), t.classList.add("flex"), e.classList.add("overflow-y-hidden"), e.classList.add("h-[100%]"))
             : (t.classList.add("invisible"), t.classList.remove("flex"), e.classList.remove("overflow-y-hidden"), e.classList.remove("h-[100%]")));
 }
+
+var splide = new Splide( '.splide', {
+    perPage: 4,
+    perMove: 1,
+    gap    : '1rem',
+    padding: '3rem',
+    // type: 'loop',
+    lazyLoad: 'nearby',
+    cover   : true,
+    drag: 'free',
+    snap: true,
+    autoplay: true,
+    arrows: true,
+    breakpoints: {
+      640: {
+        perPage: 1,
+        gap    : '.7rem',
+        padding: '1rem'
+       
+      },
+      480: {
+        perPage: 1,
+        gap    : '.7rem',
+        padding: '1rem'
+    
+      },
+      1200: {
+        perPage: 2,
+        gap    : '.7rem',
+        padding: '1rem'
+    
+      },
+      1650: {
+        perPage: 3,
+        gap    : '.7rem',
+        padding: '1rem'
+    
+      },
+    },
+  } );
+  
+  splide.mount();
