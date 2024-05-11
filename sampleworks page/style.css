@@ -1,14 +1,17 @@
 img {
     width: 100%;
+    padding: .6em;
 }
 
 .containerColcade {
     width: 95%;
     margin: 0 auto;
+
 }
 
 .gridColcade {
     display: flex;
+    
 }
 
 .gridColcade-col {
@@ -22,6 +25,7 @@ img {
 }
 
 .content {
+
     position: absolute;
     background: rgba(0, 0, 0, .8);
     color: white;
@@ -95,7 +99,7 @@ img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 10px solid #eb5a97;
+    border: 10px solid #80002F;
     margin: 10% 40%;
     position: relative;
     z-index: 1;
