@@ -4,6 +4,6 @@ var getVisible=function(){return document.getElementsByClassName('is-visible')}
 var getFirst=function(){var node=$('.words-wrapper').children().first();return node}
 var switchWords=function(current,next){$(current).removeClass('is-visible').addClass('is-hidden');$(next).removeClass('is-hidden').addClass('is-visible')}
 var getStarted=function(){var first=getVisible();var next=getNext(first);if(next.length!==0){switchWords(first,next)}else{$(first).removeClass('is-visible').addClass('is-hidden');var newEl=getFirst();$(newEl).removeClass('is-hidden').addClass('is-visible')}}
-var init=function(){setInterval(function(){getStarted()},2000)}
+var init=function(){setInterval(function(){getStarted()},2000)} 
 init()}),function hamburger(){var e=document.getElementById("body"),s=document.getElementById("hamburger"),t=document.getElementById("hamburger_content");s.onclick&&(t.classList.contains("invisible")?(t.classList.remove("invisible"),t.classList.add("flex"),e.classList.add("overflow-y-hidden"),e.classList.add("h-[100%]")):(t.classList.add("invisible"),t.classList.remove("flex"),e.classList.remove("overflow-y-hidden"),e.classList.remove("h-[100%]")))}
 var splide=new Splide('.splide',{perPage:4,perMove:1,gap:'1rem',padding:'3rem',lazyLoad:'nearby',cover:!0,drag:'free',snap:!0,autoplay:!1,arrows:!0,pagination:!0,breakpoints:{640:{perPage:1,gap:'.7rem',padding:'1rem'},480:{perPage:1,gap:'.7rem',padding:'1rem'},1200:{perPage:2,gap:'.7rem',padding:'1rem'},1650:{perPage:3,gap:'.7rem',padding:'1rem'},},});splide.mount()
