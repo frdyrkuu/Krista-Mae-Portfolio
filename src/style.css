@@ -1,5 +1,5 @@
 body {
-    cursor: url('https://cdn.custom-cursor.com/db/8102/32/minimal-heart-cursor.png') 20 20, auto;
+    /* cursor: url('https://cdn.custom-cursor.com/db/8102/32/minimal-heart-cursor.png') 20 20, auto; */
 }
 
 
@@ -72,7 +72,7 @@ body {
 }
 
 .splide_img {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
