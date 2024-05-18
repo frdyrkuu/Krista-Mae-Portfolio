@@ -716,6 +716,10 @@ video {
   height: 3rem;
 }
 
+.h-\[4\.2rem\]{
+  height: 4.2rem;
+}
+
 .h-\[4rem\]{
   height: 4rem;
 }
@@ -726,6 +730,10 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-\[4\.1rem\]{
+  height: 4.1rem;
 }
 
 .w-1\/2{
