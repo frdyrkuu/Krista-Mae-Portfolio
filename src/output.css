@@ -664,20 +664,12 @@ video {
   margin-top: 5rem;
 }
 
-.mt-32{
-  margin-top: 8rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.ml-20{
-  margin-left: 5rem;
 }
 
 .block{
@@ -722,6 +714,10 @@ video {
 
 .h-\[260px\]{
   height: 260px;
+}
+
+.h-\[282px\]{
+  height: 282px;
 }
 
 .h-\[3rem\]{
@@ -1355,10 +1351,6 @@ video {
     padding-top: 3rem;
   }
 
-  .md\:pb-10{
-    padding-bottom: 2.5rem;
-  }
-
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1391,13 +1383,6 @@ video {
 
   .lg\:ml-20{
     margin-left: 5rem;
-<<<<<<< HEAD
-=======
-  }
-
-  .lg\:-mt-32{
-    margin-top: -8rem;
->>>>>>> 353a2d8d53377308f3936167d779773038d53e57
   }
 
   .lg\:flex{

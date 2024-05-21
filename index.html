@@ -50,6 +50,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
 
+    <!-- OWL CSS -->
+    <link rel="stylesheet" href="./src/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/owl.theme.default.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -1150,98 +1153,52 @@
             </div>
 
             <style>
-                .marquee {
-                    /*   overflow: hidden; */
-                }
-
-                .marquee-content {
-                    display: flex;
-                    animation: scrolling 10s linear infinite;
-                }
-
-                .marquee-item {
-                    flex: 0 0 16vw;
-                    margin: 0 1vw;
-                    /*   flex: 0 0 20vw; */
-                    /*   margin: 0 2vw; */
-                }
-
-                .marquee-item img {
-                    display: block;
-                    width: 100%;
-                    /*   padding: 0 20px; */
-                }
-
-                @keyframes scrolling {
-                    0% {
-                        transform: translateX(0);
-                    }
-
-                    100% {
-                        transform: translatex(-144vw);
-                    }
+                .owl-nav{
+                    display: none !important;
                 }
             </style>
-
-            <div class="marquee mt-32">
-                <div class="marquee-content">
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/1.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/2.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/3.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/4.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/5.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/6.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/7.png" alt="">
-                    </div>
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/1.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/2.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/3.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/4.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/5.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/6.png" alt="">
-                    </div>
-
-                    <div class="marquee-item">
-                        <img src="./images/Certificates/7.png" alt="">
-                    </div>
-
+            <div class="px-4 mt-20">
+                <div class="owl-carousel">
+                    <div> <img src="./images/Certificates/1.png" alt=""> </div>
+                    <div> <img src="./images/Certificates/3.png" alt=""> </div>
+                    <div> <img src="./images/Certificates/4.png" alt=""> </div>
+                    <div> <img src="./images/Certificates/5.png" alt=""> </div>
+                    <div> <img src="./images/Certificates/2.png" alt=""> </div>
+                    <div> <img src="./images/Certificates/6.png" alt=""> </div>
+                    <div> <img src="./images/Certificates/7.png" alt=""> </div>
                 </div>
             </div>
+
+            <script>
+                $(document).ready(function () {
+                    $('.owl-carousel').owlCarousel({
+                        dots: false,
+                        loop: true,
+                        margin: 10,
+                        responsiveClass: true,
+                        autoHeight: true,
+                        autoplay: true,
+                        autoplayTimeout: 1000,
+                        autoplayHoverPause: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: true
+                            },
+                            600: {
+                                items: 3,
+                                nav: false
+                            },
+                            1000: {
+                                items: 5,
+                                nav: true,
+                                loop: false
+                            }
+                        }
+                    });
+
+                });
+            </script>
 
         </section>
 
@@ -1778,7 +1735,8 @@
                     <h3 class="text-[#AD004A] md:text-6xl text-4xl text-center font-['Great_vibes'] mt-4">Schedule a
                         call before they burn out!</h3>
                     <br>
-                    <div class="lg:flex grid mx-auto text-center items-center justify-center gap-10 mt-10 lg:ml-20 ml-0">
+                    <div
+                        class="lg:flex grid mx-auto text-center items-center justify-center gap-10 mt-10 lg:ml-20 ml-0">
                         <div>
                             <h1 class="text-[#80002F] text-md font-semibold">Email</h1>
                             <a href="mailto:kristamaehainto01@gmail.com"
@@ -1805,8 +1763,11 @@
     </main>
 
     <!-- Scripts -->
+
+
     <script src="./js/app.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
 </body>
 
 </html>
